@@ -1,6 +1,6 @@
 /* VARIAVEIS */
 :root {
-    --fundocorpo: #f0f0f0;
+    --fundocorpo: #1b1e23;
     --textocor: #f0f0f0;
 }
 
@@ -15,22 +15,34 @@ html, body {
 
 html{
     font-family: "Montserrat", sans-serif;
-    background-color: var(--fundocor);
+    background-color: var(--fundocorpo);
 }
 
 /* MOBILE */
+
 
 header{
     display: flex;
     justify-content: center;
     text-align: center;
     margin: 5% 0 0 0;
-    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    background-image: linear-gradient(to right, #45585e 0%, #93b3b3 100%);
     border-radius: 35px;
     width: 100%;
+    position: sticky;
+}
 
+.caixa {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #2d363c;
+}
 
-
+.caixa {
+    border: 3px solid #72a7a7;
+    border-radius: 5px;
+    padding: 14px;
 }
 
 h1{
@@ -40,10 +52,27 @@ h1{
     font-size: 15pt;
     
 }
-
+h2 {
+    color: var(--textocor);
+}
+article {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #8d8989;
+    margin: 20px;
+}
+main {
+    padding: 20px;
+}
 
 @media only screen and (min-width: 1120px) {
     /* VERSÃO DESKTOP */
-    
+h1 {
+    font-size: 30pt;
+}
+h2 {
+    font-size: 22pt;
+}
 
 }
