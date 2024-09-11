@@ -4,39 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POC 02 - Metódos ARRAYS</title>
+    <title>POC 02 - Métodos ARRAYS</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
+    <script defer src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header><h1>POC 02 - Métodos de arrays</h1></header>
+    <header><h1>POC 02 - Métodos de Arrays</h1></header>
     <main>
-    <section>
-        <article class="caixa">
-            <h1>Sort</h1>
-            <h2>Em Java, o método sort é utilizado para ordenar elementos em um array ou uma coleção (como uma List). O Java fornece o método sort na classe Arrays para ordenar arrays e na classe Collections para ordenar coleções.</h2>
-        </article>
-        <article class="caixa">
-            <h1>Filter</h1>
-            <h2>O conceito de filter é usado para criar uma nova coleção ou stream com elementos que atendem a um critério específico. Em Java, isso pode ser feito usando a API de Streams introduzida no Java 8.</h2>
-        </article>
-        <article class="caixa">
-            <h1>Map</h1>
-            <h2>O Map é usado para transformar cada elemento de uma coleção em outro elemento. Em Java, isso é feito novamente com a API de Streams.</h2>
-        </article>
-        <article class="caixa">
-            <h1>Reduce</h1>
-            <h2>O reduce é usado para reduzir uma coleção a um único valor, como uma soma, multiplicação ou concatenação.</h2>
-        </article>
-        <article class="caixa">
-            <h1>Spread</h1>
-            <h2>O conceito de spread (espalhamento) não existe diretamente em Java como existe em JavaScript, onde é usado para "espalhar" elementos de um array ou objeto em uma nova estrutura. No entanto, em Java, podemos usar métodos como addAll para combinar elementos de várias coleções.</h2>
-        </article>
-    </section>
-</main>
+        <section class="quadrado">
+            <h2>Array Original</h2>
+            <p id="array-original"></p>
+            <p>Array original que será utilizado em todos os exemplos: [5, 12, 8, 130, 44].</p>
+        </section>
+
+        <section class="quadrado">
+            <h2>Método Sort</h2>
+            <p>O método <strong>sort()</strong> ordena os elementos do array. No exemplo, o array será ordenado em ordem crescente.</p>
+            <p id="resultado-sort"></p>
+        </section>
+        
+        <section class="quadrado">
+            <h2>Método Filter</h2>
+            <p>O método <strong>filter()</strong> cria um novo array com todos os elementos que passam no teste implementado pela função fornecida. Neste caso, o filtro seleciona os números maiores que 10.</p>
+            <p id="resultado-filter"></p>
+        </section>
+        
+        <section class="quadrado">
+            <h2>Método Map</h2>
+            <p>O método <strong>map()</strong> cria um novo array com os resultados da função aplicada em cada elemento do array original. Aqui, cada número é multiplicado por 2.</p>
+            <p id="resultado-map"></p>
+        </section>
+
+        <section class="quadrado">
+            <h2>Método Reduce</h2>
+            <p>O método <strong>reduce()</strong> aplica uma função em um acumulador e em cada valor do array (da esquerda para a direita), resultando em um único valor. Neste exemplo, ele soma todos os números do array.</p>
+            <p id="resultado-reduce"></p>
+        </section>
+
+        <section class="quadrado">
+            <h2>Operador Spread</h2>
+            <p>O operador <strong>spread (...) </strong> permite expandir um array em elementos individuais. Aqui, ele é usado para adicionar novos números ao array original.</p>
+            <p id="resultado-spread"></p>
+        </section>
+    </main>
 </body>
 </html>
