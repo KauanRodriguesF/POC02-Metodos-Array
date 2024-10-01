@@ -30,6 +30,8 @@ A estrutura da página é simples e intuitiva, apresentando seções que exibem 
 - **Map**: Multiplica cada número do array por 2.
 - **Reduce**: Soma todos os números do array.
 - **Operador Spread**: Mostra o array expandido com novos elementos.
+
+- Exemplo
   <img width="998" alt="ArrayOriginal" src="https://github.com/user-attachments/assets/b7b3d5db-5dff-4921-831a-3e9bc9e02c82">
 
 ---
