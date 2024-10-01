@@ -1,39 +1,92 @@
-# POC 02 - Métodos de Arrays
 
-<div align="center">
-    <h1>💻 Prova de Conceito - Métodos de Arrays em JavaScript 💻</h1>
-    <p>Este projeto demonstra o funcionamento de diversos métodos de arrays em JavaScript através de uma interface web.</p>
-</div>
+# 🌐 Prova de Conceito - Métodos de Arrays em JavaScript 🌐
+
+> Este projeto explora os principais métodos de arrays em JavaScript, como **sort**, **filter**, **map**, **reduce**, e o operador **spread**, demonstrando suas aplicações práticas na manipulação de dados.
+
+---
 
 ## 📋 Descrição do Projeto
 
-Esta prova de conceito (POC) tem como objetivo demonstrar de forma prática e visual como os métodos de arrays em JavaScript funcionam, utilizando um array de exemplo e exibindo os resultados de cada método. A interface foi construída utilizando **HTML, CSS e JavaScript**.
+Esta Prova de Conceito (POC) tem o objetivo de demonstrar como manipular arrays em JavaScript usando métodos nativos de maneira eficiente e prática. Cada método é aplicado em um array numérico e o resultado é exibido na interface da página.
+
+A página exibe exemplos interativos que mostram como os métodos funcionam, desde ordenar até transformar e reduzir arrays, além do uso do operador **spread** para expandir arrays.
 
 ## 🚀 Funcionalidades
 
-- Exibição de um array original.
-- Aplicação de diferentes métodos de arrays:
-  - **sort()**: Ordena os elementos do array.
-  - **filter()**: Filtra os elementos com base em uma condição.
-  - **map()**: Aplica uma transformação em cada elemento do array.
-  - **reduce()**: Reduz o array a um único valor.
-  - **spread**: Expande os elementos de um array.
-  
+- **Sort**: Ordena os elementos do array em ordem crescente.
+- **Filter**: Filtra os elementos que atendem a uma condição.
+- **Map**: Cria um novo array transformando cada elemento.
+- **Reduce**: Reduz o array a um único valor, aplicando uma função acumuladora.
+- **Operador Spread**: Expande um array, permitindo adicionar novos elementos.
+
 ## 🎨 Layout
 
-A interface foi estilizada utilizando CSS, com foco em responsividade e centralização dos elementos. Cada método é apresentado em um **quadrado individual**.
+A estrutura da página é simples e intuitiva, apresentando seções que exibem o array original e o resultado de cada método aplicado. Cada exemplo de método de array é descrito em uma seção separada.
+
+### Estrutura:
+- **Array Original**: Exibe o array base que será utilizado nos exemplos.
+- **Sort**: Demonstra a ordenação do array.
+- **Filter**: Exibe os números maiores que 10.
+- **Map**: Multiplica cada número do array por 2.
+- **Reduce**: Soma todos os números do array.
+- **Operador Spread**: Mostra o array expandido com novos elementos.
+
+---
 
 ## 🛠️ Tecnologias Utilizadas
 
 - **HTML**: Estrutura básica da página.
-- **CSS**: Estilização e layout dos quadrados.
-- **JavaScript**: Lógica de aplicação dos métodos de arrays.
+- **CSS**: Estilização para melhorar a visualização das informações.
+- **JavaScript**: Aplicação dos métodos de arrays.
 
-## 📂 Estrutura do Projeto
+---
 
-```bash
-📦 POC-Array-Methods
-├── 📜 index.html        # Arquivo HTML principal
-├── 📜 style.css         # Arquivo CSS para estilização
-├── 📜 script.js         # Arquivo JavaScript com a lógica
-└── 📜 README.md         # Documentação do projeto
+## 🖥️ Exemplos de Métodos de Arrays
+
+### Exemplo do Método `Sort`:
+```javascript
+const numeros = [5, 12, 8, 130, 44];
+const arrayOrdenado = [...numeros].sort((a, b) => a - b);
+console.log(`Array ordenado: [${arrayOrdenado}]`);
+// Saída: Array ordenado: [5, 8, 12, 44, 130]
+```
+O método `sort()` ordena os elementos do array em ordem crescente.
+
+### Exemplo do Método `Filter`:
+```javascript
+const arrayFiltrado = numeros.filter(numero => numero > 10);
+console.log(`Array filtrado (números > 10): [${arrayFiltrado}]`);
+// Saída: Array filtrado (números > 10): [12, 130, 44]
+```
+O método `filter()` cria um novo array com os números maiores que 10.
+
+### Exemplo do Método `Map`:
+```javascript
+const arrayMapeado = numeros.map(numero => numero * 2);
+console.log(`Array mapeado (números * 2): [${arrayMapeado}]`);
+// Saída: Array mapeado (números * 2): [10, 24, 16, 260, 88]
+```
+O método `map()` cria um novo array multiplicando cada número por 2.
+
+### Exemplo do Método `Reduce`:
+```javascript
+const soma = numeros.reduce((acumulador, valorAtual) => acumulador + valorAtual, 0);
+console.log(`Soma dos números: ${soma}`);
+// Saída: Soma dos números: 199
+```
+O método `reduce()` soma todos os números do array, retornando um único valor.
+
+### Exemplo do Operador `Spread`:
+```javascript
+const arrayExpandido = [...numeros, 200, 300];
+console.log(`Array expandido: [${arrayExpandido}]`);
+// Saída: Array expandido: [5, 12, 8, 130, 44, 200, 300]
+```
+O operador **spread** permite expandir o array original adicionando novos elementos.
+
+---
+
+## 💻 Como Executar
+
+Abra o arquivo `index.html` em seu navegador para visualizar os exemplos.
+
